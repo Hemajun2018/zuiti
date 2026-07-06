@@ -20,7 +20,7 @@ for (const file of files) {
   const source = await readFile(new URL(`../${file}`, import.meta.url), 'utf8');
 
   assert.ok(
-    source.includes('remagi2046@gmail.com'),
+    source.includes('Support@shangzhiai.cn'),
     `${file} should include the public contact email`
   );
 

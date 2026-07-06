@@ -1,122 +1,337 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>隐私政策 - 嘴替 AI 输入法</title>
-    <link rel="stylesheet" href="./assets/styles.css">
-  </head>
-  <body>
-    <main class="page">
-      <header class="topbar">
-        <div class="brand"><span class="mark">嘴</span><span>嘴替 AI 输入法</span></div>
-        <nav class="nav" aria-label="法律页面">
-          <a href="./index.html">首页</a>
-          <a href="./terms.html">服务条款</a>
-        </nav>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>嘴替 AI 输入法隐私政策</title>
+  <meta name="description" content="嘴替 AI 输入法隐私政策">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ef;
+      --paper: #fffdfa;
+      --ink: #1f2328;
+      --muted: #667085;
+      --line: #ded8ce;
+      --accent: #0f6b5f;
+      --accent-soft: #e5f3ef;
+      --warning: #7a3f00;
+    }
 
-      <div class="hero">
-        <p class="eyebrow">Privacy Policy</p>
-        <h1>隐私政策</h1>
-        <p class="summary">本政策说明嘴替 AI 输入法如何处理账号登录、语音输入、文本处理、本机记录以及必要的运行信息。</p>
-      </div>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(31, 35, 40, 0.08);
+    }
+
+    header {
+      padding: 40px 48px 30px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffdfa 0%, #fbf7ef 100%);
+    }
+
+    .product {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      padding: 34px 48px 18px;
+    }
+
+    .notice {
+      margin: 0 0 28px;
+      padding: 16px 18px;
+      border: 1px solid #d8c9a8;
+      border-radius: 8px;
+      background: #fff8e8;
+      color: var(--warning);
+      font-size: 15px;
+    }
+
+    h2 {
+      margin: 34px 0 12px;
+      padding-top: 4px;
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.3em;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 22px 0 10px;
+    }
+
+    .summary div {
+      min-height: 92px;
+      padding: 14px 16px;
+      border: 1px solid #d8e6e1;
+      border-radius: 8px;
+      background: var(--accent-soft);
+    }
+
+    .summary b {
+      display: block;
+      margin-bottom: 5px;
+      color: #155d54;
+    }
+
+    footer {
+      padding: 26px 48px 34px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      background: #fbf7ef;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border-width: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      header,
+      main,
+      footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      header {
+        padding-top: 30px;
+      }
+
+      .summary {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <p class="product">嘴替 AI 输入法</p>
+      <h1>隐私政策</h1>
       <div class="meta">
-        <div><span>产品名称</span><strong>嘴替 AI 输入法</strong></div>
-        <div><span>开发者</span><strong>嘴替AI团队</strong></div>
-        <div><span>更新日期</span><strong>2026 年 6 月 1 日</strong></div>
+        <span>生效日期：2026 年 7 月 6 日</span>
+        <span>最近更新：2026 年 7 月 6 日</span>
+        <span>运营主体：无锡熵智科技有限公司</span>
       </div>
+    </header>
 
-      <div class="content">
-        <section>
-          <h2>一、适用范围</h2>
-          <div>
-            <p>本隐私政策适用于嘴替 AI 输入法提供的 HarmonyOS 应用、输入法扩展、账号登录、语音输入、文本处理和相关服务。</p>
-            <p>如果你不同意本政策，请停止使用需要处理个人信息的功能。你可以在授权、权限或系统设置中撤回相关授权。</p>
-          </div>
-        </section>
+    <main>
+      <p class="notice">
+        请您在使用嘴替 AI 输入法前仔细阅读本隐私政策。我们只会在实现产品功能、履行法律义务和保障服务安全所必需的范围内处理您的个人信息。
+      </p>
 
-        <section>
-          <h2>二、我们处理的信息</h2>
-          <div>
-            <h3>1. 华为账号登录信息</h3>
-            <p>当你选择使用华为账号登录时，我们会在你授权后获取华为账号服务返回的必要登录标识和登录状态信息，用于创建或登录你的嘴替账号。若后续版本请求昵称、头像或手机号等信息，授权界面会展示相应范围。</p>
+      <section class="summary" aria-label="隐私重点摘要">
+        <div>
+          <b>仅在主动使用时处理</b>
+          麦克风仅在您主动使用语音输入、语音编辑等功能时调用。
+        </div>
+        <div>
+          <b>本机数据优先</b>
+          历史记录、个人词典和偏好设置主要保存在您的设备本地。
+        </div>
+        <div>
+          <b>不读取无关信息</b>
+          我们不会主动读取通讯录、相册、精确位置或剪贴板内容。
+        </div>
+        <div>
+          <b>可联系处理权利请求</b>
+          如需访问、更正、删除或撤回授权，可通过邮箱联系我们。
+        </div>
+      </section>
 
-            <h3>2. 语音输入和文本处理信息</h3>
-            <p>当你主动使用语音输入或文本处理功能时，应用会采集你提供的语音或文本，并在完成本次功能所需范围内进行处理。处理结果用于展示、编辑或输入到当前场景。</p>
+      <h2>一、适用范围</h2>
+      <p>
+        本隐私政策适用于无锡熵智科技有限公司提供的“嘴替 AI 输入法”应用及相关服务，包括输入法、语音输入、文本整理、文本改写、个人词典、历史记录、账号登录、订阅权益等功能。
+      </p>
+      <p>
+        如某项功能另有单独的隐私说明、授权提示或协议规则，相关内容与本政策共同适用；如存在不一致，以更具体的说明为准。
+      </p>
 
-            <h3>3. 本机记录和个人词条</h3>
-            <p>应用可能在本机保存你的使用记录摘要、字数统计和你手动添加的个人词条，用于提供历史查看、统计展示和输入辅助。</p>
+      <h2>二、我们如何收集和使用信息</h2>
+      <h3>1. 语音输入与语音编辑</h3>
+      <p>
+        当您主动点击或触发语音输入、语音编辑等功能时，我们会请求麦克风权限并处理必要的语音数据，用于完成语音识别、文本生成、文本整理、文本改写或插入候选文本。您不使用相关功能时，我们不会调用麦克风。
+      </p>
+      <p>
+        在输入法隐藏、输入客户端解绑、您取消录音、网络失败、权限关闭或功能结束时，我们会停止录音和相关处理。
+      </p>
 
-            <h3>4. 运行信息</h3>
-            <p>为了保障服务稳定性，我们可能记录请求时间、耗时、错误码、应用版本、设备类型等非内容型运行信息。生产环境默认不记录完整语音或完整文本内容。</p>
-          </div>
-        </section>
+      <h3>2. 文本处理与输入辅助</h3>
+      <p>
+        当您主动使用文本整理、改写、编辑、候选建议、个人词典等功能时，我们会处理您提供或选择处理的文本内容，用于生成相应结果、提升当前输入体验或完成您明确发起的操作。
+      </p>
+      <p>
+        我们不会绕过系统限制读取密码框、支付密码、安全键盘等敏感输入场景中的内容；在识别到敏感场景时，相关语音或智能处理功能可能被禁用或停止。
+      </p>
 
-        <section>
-          <h2>三、权限使用</h2>
-          <div>
-            <ul>
-              <li>麦克风权限：仅在你主动使用语音输入时采集音频。</li>
-              <li>网络权限：用于账号登录、语音输入、文本处理和必要的服务连通性。</li>
-            </ul>
-            <p>我们不会主动读取通讯录、相册、精确位置或剪贴板内容。密码框、安全输入等敏感输入场景下，语音输入会被禁用或停止。</p>
-          </div>
-        </section>
+      <h3>3. 本机历史、词典和设置</h3>
+      <p>
+        为提供历史查看、个人词典、键盘设置、使用偏好、订阅状态展示等功能，应用可能在您的设备本地保存必要数据。您可以通过应用内功能、系统清除应用数据或卸载应用删除本机数据。
+      </p>
 
-        <section>
-          <h2>四、第三方服务</h2>
-          <div>
-            <p>为实现账号登录和必要功能，我们可能接入以下第三方或基础服务：</p>
-            <ul>
-              <li>华为账号服务：用于华为账号授权登录。</li>
-              <li>必要的基础服务：用于提供语音输入、文本处理、安全连接、故障排查等支撑。</li>
-            </ul>
-            <p>第三方服务会按照其适用的服务条款和隐私规则处理数据。我们会尽量只传输实现功能所必需的数据。</p>
-          </div>
-        </section>
+      <h3>4. 账号登录与订阅权益</h3>
+      <p>
+        当您选择使用华为账号登录或购买、恢复订阅权益时，我们会处理完成登录、身份识别、订单校验、权益开通、权益恢复、风控和客服所需的信息。相关支付和账号能力由平台提供，具体处理也受平台规则约束。
+      </p>
 
-        <section>
-          <h2>五、保存期限</h2>
-          <div>
-            <p>语音和文本内容仅在完成本次功能、安全保障和法律法规要求的范围内处理。本机记录保存在你的设备上。非内容型运行信息会在实现安全、排障和合规目的所需的合理期限内保存。</p>
-          </div>
-        </section>
+      <h3>5. 运行日志和安全信息</h3>
+      <p>
+        为保障服务稳定和排查问题，我们可能处理必要的非内容型运行信息，例如请求时间、错误码、耗时、应用版本、设备类型、网络状态、功能是否超时或失败等。
+      </p>
+      <p>
+        我们不会主动将原始语音内容、完整输入内容、完整识别文本、完整整理文本、密码、支付密码、剪贴板、账号凭据或其他敏感凭据写入公开日志。
+      </p>
 
-        <section>
-          <h2>六、你的权利</h2>
-          <div>
-            <p>你可以通过系统权限设置关闭麦克风权限，或停止使用账号登录、语音输入等功能。你也可以通过清除应用数据或卸载应用删除本机保存的数据。</p>
-            <p>如果你需要访问、更正、删除个人信息，或撤回授权、注销账号、投诉反馈，请通过本政策中的联系方式与我们联系。</p>
-          </div>
-        </section>
+      <h2>三、设备权限调用</h2>
+      <ul>
+        <li><strong>麦克风权限：</strong>用于您主动发起的语音输入、语音编辑和语音识别相关功能。</li>
+        <li><strong>网络权限：</strong>用于账号登录、订阅权益校验、语音和文本处理、服务连通性检查等必要联网功能。</li>
+        <li><strong>网络状态权限：</strong>用于判断网络可用性，帮助提示连接问题和提升服务稳定性。</li>
+        <li><strong>震动权限：</strong>用于键盘触感反馈和必要的交互提示。</li>
+      </ul>
+      <p>
+        您可以在系统设置中管理相关权限。关闭某项权限后，与该权限相关的功能可能无法正常使用，但不影响您使用不依赖该权限的其他功能。
+      </p>
 
-        <section>
-          <h2>七、未成年人保护</h2>
-          <div>
-            <p>如果你是未成年人，请在监护人同意和指导下使用本产品。若监护人认为我们处理了未成年人个人信息，可以联系我们处理。</p>
-          </div>
-        </section>
+      <h2>四、我们如何共享、委托处理和公开披露信息</h2>
+      <p>
+        我们不会出售您的个人信息。为实现账号登录、支付订阅、语音和文本处理、安全风控、云服务托管、问题排查等必要功能，我们可能在最小必要范围内委托服务提供方处理相关信息。
+      </p>
+      <p>
+        对受托处理方，我们会要求其按照本政策、我们的指示以及适用法律法规处理信息，不得将相关信息用于其他目的。除法律法规要求、司法或行政机关依法提出要求，或为保护用户和服务安全所必需外，我们不会公开披露您的个人信息。
+      </p>
 
-        <section>
-          <h2>八、联系我们</h2>
-          <div>
-            <p>开发者：嘴替AI团队</p>
-            <p>联系邮箱：<a href="mailto:remagi2046@gmail.com">remagi2046@gmail.com</a></p>
-            <p>我们会在收到请求后尽快处理，并在法律法规要求的期限内答复。</p>
-          </div>
-        </section>
+      <h2>五、信息存储和安全</h2>
+      <p>
+        我们会在实现本政策所述目的所需的期限内保存个人信息。对本机保存的数据，您可以通过清除应用数据或卸载应用删除；对账号和订阅相关记录，我们会按照法律法规、平台规则和交易留存要求保存必要期限。
+      </p>
+      <p>
+        我们会采取合理的安全措施保护信息，包括访问控制、传输保护、日志限制、最小化处理和权限隔离等。互联网环境并非绝对安全，如发生个人信息安全事件，我们将依法及时告知并采取补救措施。
+      </p>
 
-        <section>
-          <h2>九、政策更新</h2>
-          <div>
-            <p>我们可能根据产品功能、法律法规或审核要求更新本政策。重大变更会通过应用内提示、页面公告或其他合理方式告知你。</p>
-          </div>
-        </section>
-      </div>
+      <h2>六、未成年人保护</h2>
+      <p>
+        嘴替 AI 输入法主要面向具备完全民事行为能力的用户，不专门面向未满 14 周岁的儿童。未成年人使用本服务前，应取得监护人同意并在监护人指导下使用。
+      </p>
+      <p>
+        如监护人认为我们在未获同意的情况下处理了儿童个人信息，可通过本政策载明的联系方式联系我们，我们会依法核实并处理。
+      </p>
 
-      <footer>© 2026 嘴替AI团队</footer>
+      <h2>七、您的权利</h2>
+      <p>
+        在法律法规允许的范围内，您可以请求访问、更正、复制、删除您的个人信息，撤回同意，注销或清除相关数据，或对个人信息处理规则进行咨询和投诉。
+      </p>
+      <p>
+        对于本机保存的历史记录、个人词典和设置，您可以通过应用内功能、系统清除应用数据或卸载应用进行管理。对于需要我们协助处理的请求，请通过邮箱联系我们。为保障账号和数据安全，我们可能需要验证您的身份。
+      </p>
+
+      <h2>八、政策更新</h2>
+      <p>
+        我们可能根据产品功能、法律法规或运营需要更新本隐私政策。发生重大变更时，我们会通过应用内提示、页面公告或其他合理方式通知您。未经您同意，我们不会削减您按照本政策应享有的权利。
+      </p>
+
+      <h2>九、联系我们</h2>
+      <p>
+        如您对本隐私政策或个人信息处理有任何问题、意见、投诉或权利请求，请通过以下方式联系我们：
+      </p>
+      <ul>
+        <li>运营主体：无锡熵智科技有限公司</li>
+        <li>联系邮箱：<a href="mailto:Support@shangzhiai.cn">Support@shangzhiai.cn</a></li>
+      </ul>
+      <p>
+        我们会在收到您的请求并完成必要身份核验后，在法律法规规定的期限内予以答复。
+      </p>
     </main>
-  </body>
+
+    <footer>
+      <nav class="footer-links" aria-label="法律页面链接">
+        <a href="/">隐私政策</a>
+        <a href="/terms/">服务条款</a>
+      </nav>
+      <div>无锡熵智科技有限公司 · <a href="mailto:Support@shangzhiai.cn">Support@shangzhiai.cn</a></div>
+      <div>苏ICP备2026045062号-1</div>
+    </footer>
+  </article>
+</body>
 </html>
